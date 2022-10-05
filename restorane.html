@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<form action="">
+ <div>
+   <fieldset>
+    
+    <legend >Особисті дані</legend>
+        <label for="email">Email</label>
+        <input type="email" required pattern="[A-Za-z]{15}" autocomplete="off" >
+        <label for="name">Ім'я</label>
+        <input type="text" required pattern="[A-Za-z]{15}">
+        <progress>Unknown</progress>
+        <label for="">Улюблений колір
+          <input type="color">
+        </label>
+
+   </fieldset>
+ </div>
+   <fieldset>
+     <legend>Відгук про ресторан</legend>
+     <div>
+       <div>
+        <label for=""> Місто:
+         <select>
+        
+        <option value="1">Житомир</option>
+        <option value="2">Київ</option>
+        <option value="3">Чернігів</option>
+        <option value="4">Черкаси</option>
+        <option value="5">Львів</option>
+    
+    </select> 
+  
+  </label>
+    <label for=""> Номер ресторану
+    <select multiple>
+        
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+  
+  </select> 
+</label>
+</div>
+<div>
+<label for="">Оцінка закладу
+  <input type="number" min="0" max="10" >
+</label>
+<label for="">Оцінка обслуговування
+  <input type="range" min="0" max="10" >
+</label>
+</div>
+<div>
+  <p>Відгук:</p>
+  <textarea name="" id="" cols="30" rows="10" spellcheck="false" placeholder="Пиши тут..."></textarea>
+</div>
+</fieldset>
+
+  <fieldset>
+    <legend>Оцінка страв</legend>
+    <label for="">Як вам страва?
+    <input list="assessment">
+    <datalist id="assessment">
+      <option value="Чудово"></option>
+      <option value="нормально"></option>
+      <option value="їсти можна"></option>
+      <option value="гімно"></option>
+    </datalist>
+  </label>
+    <label>Дата відвідування
+      <input type="date">
+    </label>
+    <div>
+      <label for="">
+        <select>
+          <optgroup label="Мясо">
+            <option>Куриця</option>
+            <option>Риба</option>
+            <option>Свинина</option>
+          </optgroup>
+          <optgroup label="Каши">
+            <option>Гречка</option>
+            <option>Рис</option>
+            <option>Овсянка</option>
+          </optgroup>
+          <optgroup label="Алкоголь">
+            <option>Водка</option>
+            <option>Пиво</option>
+            <option>Вино</option>
+          </optgroup>
+        </select>
+      </label>
+    </div>
+  </fieldset>
+
+  <div>
+  <input type="button" value="Відправити">
+  <input type="button" value="Очистити">
+</div>
+
+<meter  max="100" min="0"  value="34"></meter>
+</form>
+
+</body>
+</html>
